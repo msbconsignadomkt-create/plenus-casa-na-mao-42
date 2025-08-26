@@ -106,7 +106,7 @@ const Index = () => {
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-orange rounded-2xl flex items-center justify-center">
                   <Home className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-primary">Casa, Apto ou Lote</h3>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Casa, Apartamento ou Lote</h3>
                 <p className="text-muted-foreground">Escolha entre casa, apartamento ou terreno. Flexibilidade para seu sonho.</p>
               </CardContent>
             </Card>
