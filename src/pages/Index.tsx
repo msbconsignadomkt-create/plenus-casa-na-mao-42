@@ -4,18 +4,18 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Car, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X } from "lucide-react";
-import heroCarImage from "@/assets/hero-car.jpg";
+import { Home, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X, Building, MapPin } from "lucide-react";
+import heroRealEstateImage from "@/assets/hero-real-estate.jpg";
 const Index = () => {
   const handleWhatsAppContact = () => {
-    window.open('https://wa.me/5531996925313?text=Olá%2C%20tenho%20interesse%20em%20simular%20um%20consórcio%20de%20veículo.%20Pode%20me%20ajudar%3F', '_blank');
+    window.open('https://wa.me/5531996925313?text=Olá%2C%20tenho%20interesse%20em%20simular%20um%20consórcio%20imobiliário.%20Pode%20me%20ajudar%3F', '_blank');
   };
   const handleSimulationSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
     const name = formData.get('name');
     const phone = formData.get('phone');
-    const vehicle = formData.get('vehicle');
+    const property = formData.get('property');
     const value = formData.get('value');
     handleWhatsAppContact();
   };
@@ -42,11 +42,11 @@ const Index = () => {
                 Zero Juros • Sem Entrada
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary-foreground leading-tight">
-                Realize o sonho do seu
-                <span className="text-secondary block">carro novo</span>
+                Conquiste sua
+                <span className="text-secondary block">casa própria</span>
               </h1>
               <p className="text-xl mb-8 text-primary-foreground/80 max-w-lg">
-                Consórcio sem juros, sem entrada obrigatória e com parcelas que cabem no seu bolso. Simule agora!
+                Consórcio imobiliário sem juros, sem entrada obrigatória. Casa, apartamento ou lote - simule agora!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="secondary" size="lg" onClick={() => document.getElementById('simulacao')?.scrollIntoView({
@@ -62,7 +62,7 @@ const Index = () => {
               </div>
             </div>
             <div className="lg:order-2">
-              <img src={heroCarImage} alt="Carro novo - Consórcio Plenus" className="w-full h-auto rounded-2xl shadow-elegant" />
+              <img src={heroRealEstateImage} alt="Casa própria - Consórcio Plenus" className="w-full h-auto rounded-2xl shadow-elegant" />
             </div>
           </div>
         </div>
@@ -73,10 +73,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-              Por que escolher nosso consórcio?
+              Por que escolher nosso consórcio imobiliário?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Vantagens exclusivas que fazem toda a diferença na hora de conquistar seu veículo
+              Vantagens exclusivas que fazem toda a diferença na hora de conquistar seu imóvel
             </p>
           </div>
           
@@ -87,7 +87,7 @@ const Index = () => {
                   <CreditCard className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-primary">Zero Juros</h3>
-                <p className="text-muted-foreground">Sem juros abusivos que inflam sua parcela. Pague apenas o valor real do veículo.</p>
+                <p className="text-muted-foreground">Sem juros abusivos que inflam sua parcela. Pague apenas o valor real do imóvel.</p>
               </CardContent>
             </Card>
 
@@ -104,10 +104,10 @@ const Index = () => {
             <Card className="text-center border-0 shadow-card hover:shadow-elegant transition-all">
               <CardContent className="pt-8 pb-6">
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-orange rounded-2xl flex items-center justify-center">
-                  <Calculator className="h-8 w-8 text-white" />
+                  <Home className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-primary">Parcelas Acessíveis</h3>
-                <p className="text-muted-foreground">Valores que cabem no seu orçamento. Planejamento financeiro inteligente.</p>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Casa, Apto ou Lote</h3>
+                <p className="text-muted-foreground">Escolha entre casa, apartamento ou terreno. Flexibilidade para seu sonho.</p>
               </CardContent>
             </Card>
 
@@ -116,7 +116,7 @@ const Index = () => {
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-orange rounded-2xl flex items-center justify-center">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-primary">Segurança Financeira</h3>
+                <h3 className="text-xl font-semibold mb-2 text-primary">Segurança Garantida</h3>
                 <p className="text-muted-foreground">Investimento protegido e regulamentado pelo Banco Central do Brasil.</p>
               </CardContent>
             </Card>
@@ -129,10 +129,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-              Consórcio vs Financiamento
+              Consórcio vs Financiamento Imobiliário
             </h2>
             <p className="text-xl text-muted-foreground">
-              Veja as diferenças e entenda por que o consórcio é a melhor opção
+              Veja as diferenças e entenda por que o consórcio é a melhor opção para seu imóvel
             </p>
           </div>
 
@@ -145,10 +145,10 @@ const Index = () => {
                     Características
                   </div>
                   <div className="bg-gradient-orange text-white p-6 font-semibold text-center border-b md:border-b-0 md:border-r">
-                    Consórcio Plenus
+                    Consórcio Imobiliário
                   </div>
                   <div className="bg-destructive/10 text-destructive p-6 font-semibold text-center">
-                    Financiamento
+                    Financiamento Imobiliário
                   </div>
 
                   {/* Rows */}
@@ -159,7 +159,7 @@ const Index = () => {
                   </div>
                   <div className="p-6 border-b text-center">
                     <X className="h-6 w-6 text-destructive mx-auto mb-1" />
-                    <span className="text-destructive font-semibold">Até 3% a.m.</span>
+                    <span className="text-destructive font-semibold">Até 12% a.a.</span>
                   </div>
 
                   <div className="p-6 border-b border-r font-medium">Entrada</div>
@@ -169,7 +169,7 @@ const Index = () => {
                   </div>
                   <div className="p-6 border-b text-center">
                     <X className="h-6 w-6 text-destructive mx-auto mb-1" />
-                    <span className="text-destructive font-semibold">Obrigatória (20-30%)</span>
+                    <span className="text-destructive font-semibold">Obrigatória (30-50%)</span>
                   </div>
 
                   <div className="p-6 border-r font-medium">Valor Total Pago</div>
@@ -179,7 +179,7 @@ const Index = () => {
                   </div>
                   <div className="p-6 text-center">
                     <X className="h-6 w-6 text-destructive mx-auto mb-1" />
-                    <span className="text-destructive font-semibold">Até 80% mais caro</span>
+                    <span className="text-destructive font-semibold">Até 100% mais caro</span>
                   </div>
                 </div>
               </CardContent>
@@ -196,7 +196,7 @@ const Index = () => {
               Como funciona?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Apenas 3 passos simples para conquistar seu veículo
+              Apenas 3 passos simples para conquistar seu imóvel
             </p>
           </div>
 
@@ -207,7 +207,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4 text-primary">Simule</h3>
               <p className="text-muted-foreground">
-                Faça sua simulação gratuita e escolha o plano que melhor se adapta ao seu perfil e orçamento.
+                Faça sua simulação gratuita para casa, apartamento ou lote que melhor se adapta ao seu perfil.
               </p>
             </div>
 
@@ -215,9 +215,9 @@ const Index = () => {
               <div className="w-20 h-20 mx-auto mb-6 bg-gradient-orange rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Escolha a Parcela</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Escolha o Imóvel</h3>
               <p className="text-muted-foreground">
-                Defina o valor da parcela que cabe no seu orçamento. Flexibilidade total para sua realidade.
+                Defina o tipo de imóvel e valor que cabe no seu orçamento. Flexibilidade total para sua realidade.
               </p>
             </div>
 
@@ -225,9 +225,9 @@ const Index = () => {
               <div className="w-20 h-20 mx-auto mb-6 bg-gradient-orange rounded-full flex items-center justify-center text-white text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Contrate com Especialista</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Conquiste seu Lar</h3>
               <p className="text-muted-foreground">
-                Nosso time de especialistas te acompanha em todo o processo até a entrega das chaves.
+                Nosso time de especialistas te acompanha em todo o processo até a entrega das chaves do seu novo lar.
               </p>
             </div>
           </div>
@@ -243,7 +243,7 @@ const Index = () => {
                 Mais de 10 anos de experiência
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-                Autoridade e experiência que você pode confiar
+                Especialistas em consórcio imobiliário há mais de 10 anos
               </h2>
               
               <div className="grid grid-cols-2 gap-6 mb-8">
@@ -270,7 +270,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-2">
-                          "Excelente atendimento! Consegui meu carro sem juros e sem entrada. Hugo foi fundamental no processo."
+                          "Realizei o sonho da casa própria! Consegui minha casa sem juros e sem entrada. Hugo foi fundamental no processo."
                         </p>
                         <p className="font-semibold text-primary">— Maria Silva, São Paulo</p>
                       </div>
@@ -290,7 +290,7 @@ const Index = () => {
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-2">
-                          "Transparência total e processo super simples. Recomendo a todos que querem um consórcio sério."
+                          "Transparência total e processo super simples. Consegui meu apartamento dos sonhos. Recomendo!"
                         </p>
                         <p className="font-semibold text-primary">— João Santos, Rio de Janeiro</p>
                       </div>
@@ -306,7 +306,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-primary mb-2">Hugo - CEO Plenus Seguros</h3>
                   <p className="text-muted-foreground mb-4">
-                    Mais de 10 anos ajudando pessoas a realizarem o sonho do carro próprio através do consórcio.
+                    Mais de 10 anos ajudando pessoas a realizarem o sonho da casa própria através do consórcio imobiliário.
                   </p>
                   <Button variant="outline" onClick={handleWhatsAppContact} className="w-full">
                     <Phone className="h-4 w-4 mr-2" />
@@ -327,7 +327,7 @@ const Index = () => {
               Perguntas Frequentes
             </h2>
             <p className="text-xl text-muted-foreground">
-              Tire suas dúvidas sobre consórcio
+              Tire suas dúvidas sobre consórcio imobiliário
             </p>
           </div>
 
@@ -335,10 +335,10 @@ const Index = () => {
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="bg-card rounded-lg px-6 shadow-card">
                 <AccordionTrigger className="text-left font-semibold text-primary hover:no-underline">
-                  Como funciona o consórcio?
+                  Como funciona o consórcio imobiliário?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  O consórcio é um grupo de pessoas que se reúnem para adquirir bens. Mensalmente, através de sorteios e lances, os participantes são contemplados e podem adquirir seu veículo. É regulamentado pelo Banco Central.
+                  O consórcio imobiliário é um grupo de pessoas que se reúnem para adquirir imóveis. Mensalmente, através de sorteios e lances, os participantes são contemplados e podem adquirir casa, apartamento ou terreno. É regulamentado pelo Banco Central.
                 </AccordionContent>
               </AccordionItem>
 
@@ -362,10 +362,10 @@ const Index = () => {
 
               <AccordionItem value="item-4" className="bg-card rounded-lg px-6 shadow-card">
                 <AccordionTrigger className="text-left font-semibold text-primary hover:no-underline">
-                  Posso sair do consórcio quando quiser?
+                  Posso usar o FGTS no consórcio imobiliário?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Sim, você pode cancelar seu consórcio a qualquer momento. Valores pagos são devolvidos conforme regulamento do grupo, geralmente após o encerramento.
+                  Sim! Você pode usar o FGTS para dar lance ou quitar parcelas do seu consórcio imobiliário, seguindo as regras da Caixa Econômica Federal.
                 </AccordionContent>
               </AccordionItem>
 
@@ -387,10 +387,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-              Simule seu consórcio
+              Simule seu consórcio imobiliário
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
-              Preencha os dados abaixo e receba sua simulação personalizada
+              Preencha os dados abaixo e receba sua simulação personalizada para casa, apartamento ou lote
             </p>
 
             <Card className="shadow-elegant">
@@ -408,20 +408,21 @@ const Index = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="vehicle">Tipo de veículo</Label>
-                    <select id="vehicle" name="vehicle" className="w-full p-3 border border-input rounded-lg bg-background" required>
-                      <option value="">Selecione o tipo de veículo</option>
-                      <option value="Carro Popular">Carro Popular (até R$ 50.000)</option>
-                      <option value="Carro Médio">Carro Médio (R$ 50.000 - R$ 100.000)</option>
-                      <option value="Carro Premium">Carro Premium (acima de R$ 100.000)</option>
-                      <option value="Moto">Moto</option>
-                      <option value="SUV/Picape">SUV/Picape</option>
+                    <Label htmlFor="property">Tipo de imóvel</Label>
+                    <select id="property" name="property" className="w-full p-3 border border-input rounded-lg bg-background" required>
+                      <option value="">Selecione o tipo de imóvel</option>
+                      <option value="Casa Popular">Casa Popular (até R$ 200.000)</option>
+                      <option value="Casa Média">Casa Média (R$ 200.000 - R$ 500.000)</option>
+                      <option value="Casa Premium">Casa Premium (acima de R$ 500.000)</option>
+                      <option value="Apartamento">Apartamento</option>
+                      <option value="Lote/Terreno">Lote/Terreno</option>
+                      <option value="Kitnet/Studio">Kitnet/Studio</option>
                     </select>
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="value">Valor estimado do veículo</Label>
-                    <Input id="value" name="value" placeholder="Ex: 80.000" required />
+                    <Label htmlFor="value">Valor estimado do imóvel</Label>
+                    <Input id="value" name="value" placeholder="Ex: 350.000" required />
                   </div>
                   
                   <Button type="submit" className="w-full" size="lg" variant="secondary">
@@ -441,7 +442,7 @@ const Index = () => {
           <div className="text-center">
             <img src="/lovable-uploads/c5604e87-e4d6-41ab-b1a7-9b2e28dd53e2.png" alt="Plenus Seguros - logo" className="h-12 w-auto mx-auto mb-6" loading="lazy" />
             <p className="mb-4">
-              Sua parceria de confiança para realizar o sonho do carro próprio
+              Sua parceria de confiança para realizar o sonho da casa própria
             </p>
             <div className="flex justify-center gap-6 text-sm">
               <span>© 2025 Plenus Seguros</span>
