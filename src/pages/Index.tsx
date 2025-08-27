@@ -4,11 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Home, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X, Building, MapPin } from "lucide-react";
+import { Home, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X, Building, MapPin, MessageCircle } from "lucide-react";
 import heroRealEstateImage from "@/assets/hero-real-estate.jpg";
 const Index = () => {
   const handleWhatsAppContact = () => {
-    window.open('https://wa.me/5531996925313?text=Olá%2C%20tenho%20interesse%20em%20simular%20um%20consórcio%20imobiliário.%20Pode%20me%20ajudar%3F', '_blank');
+    window.open('https://api.whatsapp.com/send?phone=5531996925313&text=Ol%C3%A1%2C+tenho+interesse+em+simular+um+cons%C3%B3rcio+de+casa%2Fapartamento.+Pode+me+ajudar%3F', '_blank');
   };
   const handleSimulationSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,7 +17,18 @@ const Index = () => {
     const phone = formData.get('phone');
     const property = formData.get('property');
     const value = formData.get('value');
-    handleWhatsAppContact();
+    
+    const message = `Olá, gostaria de simular um consórcio de imóvel:
+    
+👤 Nome: ${name}
+📱 WhatsApp: ${phone}
+🏠 Tipo de imóvel: ${property}
+💰 Valor estimado: R$ ${value}
+
+Aguardo retorno para prosseguir com a simulação!`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://api.whatsapp.com/send?phone=5531996925313&text=${encodedMessage}`, '_blank');
   };
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -450,6 +461,17 @@ Administrador com uma sólida trajetória, este profissional iniciou sua carreir
           </div>
         </div>
       </footer>
+
+      {/* Botão Flutuante WhatsApp */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button 
+          size="lg" 
+          onClick={handleWhatsAppContact}
+          className="rounded-full w-16 h-16 bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
+        >
+          <MessageCircle className="h-8 w-8" />
+        </Button>
+      </div>
     </div>;
-};
+  };
 export default Index;
