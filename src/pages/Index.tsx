@@ -281,7 +281,7 @@ Aguardo retorno para prosseguir com a simulação!`;
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-2">
-                          "Realizei o sonho da casa própria! Consegui minha casa sem juros e sem entrada. Hugo foi fundamental no processo."
+                          "Realizei o sonho da casa própria! Consegui minha casa sem juros e sem entrada. A equipe da Plenus foi fundamental no processo."
                         </p>
                         <p className="font-semibold text-primary">— Maria Silva, São Paulo</p>
                       </div>
@@ -315,12 +315,13 @@ Aguardo retorno para prosseguir com a simulação!`;
               <img src="/lovable-uploads/38b25d33-557d-4466-871e-577411d2ce35.png" alt="Hugo - Especialista Plenus Seguros" className="w-80 h-auto mx-auto rounded-2xl shadow-elegant" />
               <Card className="mt-6 shadow-card">
                 <CardContent className="p-6">
-                  <h3 className="font-semibold text-primary mb-2">Hugo Morais - CEO Plenus
-Administrador com uma sólida trajetória, este profissional iniciou sua carreira em 2008 focado no atendimento a empresas, em uma das maiores instituições financeiras do país. Em 2015, expandiu sua atuação para o mercado de investimentos, onde passou a atuar tanto com pessoas físicas quanto empresas na maior distribuidora de investimentos do Brasil. Sua experiência abrange uma década e meia de atuação no mercado financeiro, com um olhar completo sobre as necessidades de diferentes perfis de clientes.</h3>
+                  <p className="text-muted-foreground mb-4">
+A Plenus Seguros possui profissionais com mais de 10 anos de experiência no mercado, sendo especialista em oferecer diversas modalidades de seguros, consórcios e benefícios para pessoas físicas e empresas. Conseguimos isso por meio de um processo diferenciado e qualificado de seus profissionais e também pela sólida parceria com as melhores seguradoras e administradoras de consórcio do mercado. A empresa está capacitada e vem identificando quais são os produtos que melhor atendem as necessidades e expectativas de seus clientes.
+                  </p>
                   
                   <Button variant="outline" onClick={handleWhatsAppContact} className="w-full">
                     <Phone className="h-4 w-4 mr-2" />
-                    Falar com Hugo
+                    Falar com Especialista
                   </Button>
                 </CardContent>
               </Card>
