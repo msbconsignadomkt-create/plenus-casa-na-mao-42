@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Home, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X, Building, MapPin, MessageCircle } from "lucide-react";
-import heroRealEstateImage from "@/assets/hero-real-estate.jpg";
+import heroCasaImage from "@/assets/hero-casa.jpg";
 const Index = () => {
   const handleWhatsAppContact = () => {
     window.open('https://api.whatsapp.com/send?phone=5531996925313&text=Ol%C3%A1%2C+tenho+interesse+em+simular+um+cons%C3%B3rcio+de+casa%2Fapartamento.+Pode+me+ajudar%3F', '_blank');
@@ -73,7 +73,7 @@ Aguardo retorno para prosseguir com a simulação!`;
               </div>
             </div>
             <div className="lg:order-2">
-              <img src={heroRealEstateImage} alt="Casa própria - Consórcio Plenus" className="w-full h-auto rounded-2xl shadow-elegant" />
+              <img src={heroCasaImage} alt="Casa própria - Consórcio Plenus" className="w-full h-auto rounded-2xl shadow-elegant" />
             </div>
           </div>
         </div>
