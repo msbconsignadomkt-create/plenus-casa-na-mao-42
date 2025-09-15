@@ -311,12 +311,14 @@ Aguardo retorno para prosseguir com a simulação!`;
               </div>
             </div>
 
-            <div className="text-center">
-              <img src="/lovable-uploads/38b25d33-557d-4466-871e-577411d2ce35.png" alt="Hugo - Especialista Plenus Seguros" className="w-80 h-auto mx-auto rounded-2xl shadow-elegant" />
-              <Card className="mt-6 shadow-card">
-                <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-4">
-A Plenus Seguros possui profissionais com mais de 10 anos de experiência no mercado, sendo especialista em oferecer diversas modalidades de seguros, consórcios e benefícios para pessoas físicas e empresas. Conseguimos isso por meio de um processo diferenciado e qualificado de seus profissionais e também pela sólida parceria com as melhores seguradoras e administradoras de consórcio do mercado. A empresa está capacitada e vem identificando quais são os produtos que melhor atendem as necessidades e expectativas de seus clientes.
+            <div>
+              <Card className="shadow-card">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-primary mb-6 text-center">
+                    Sobre a Plenus Seguros
+                  </h3>
+                  <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                    A Plenus Seguros possui profissionais com mais de 10 anos de experiência no mercado, sendo especialista em oferecer diversas modalidades de seguros, consórcios e benefícios para pessoas físicas e empresas. Conseguimos isso por meio de um processo diferenciado e qualificado de seus profissionais e também pela sólida parceria com as melhores seguradoras e administradoras de consórcio do mercado. A empresa está capacitada e vem identificando quais são os produtos que melhor atendem as necessidades e expectativas de seus clientes.
                   </p>
                   
                   <Button variant="outline" onClick={handleWhatsAppContact} className="w-full">
