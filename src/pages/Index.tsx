@@ -79,6 +79,60 @@ Aguardo retorno para prosseguir com a simulação!`;
         </div>
       </section>
 
+      {/* Simulação */}
+      <section id="simulacao" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
+              Simule seu consórcio imobiliário
+            </h2>
+            <p className="text-xl text-muted-foreground mb-12">
+              Preencha os dados abaixo e receba sua simulação personalizada para casa, apartamento ou lote
+            </p>
+
+            <Card className="shadow-elegant">
+              <CardContent className="p-8">
+                <form onSubmit={handleSimulationSubmit} className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">Nome completo</Label>
+                      <Input id="name" name="name" placeholder="Seu nome completo" required />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">WhatsApp</Label>
+                      <Input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" required />
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="property">Tipo de imóvel</Label>
+                    <select id="property" name="property" className="w-full p-3 border border-input rounded-lg bg-background" required>
+                      <option value="">Selecione o tipo de imóvel</option>
+                      <option value="Casa Popular">Casa Popular (até R$ 200.000)</option>
+                      <option value="Casa Média">Casa Média (R$ 200.000 - R$ 500.000)</option>
+                      <option value="Casa Premium">Casa Premium (acima de R$ 500.000)</option>
+                      <option value="Apartamento">Apartamento</option>
+                      <option value="Lote/Terreno">Lote/Terreno</option>
+                      <option value="Kitnet/Studio">Kitnet/Studio</option>
+                    </select>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="value">Valor estimado do imóvel</Label>
+                    <Input id="value" name="value" placeholder="Ex: 350.000" required />
+                  </div>
+                  
+                  <Button type="submit" className="w-full" size="lg" variant="secondary">
+                    Receber Simulação no WhatsApp
+                    <Phone className="ml-2 h-5 w-5" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Diferenciais */}
       <section className="py-16 bg-plenus-gray">
         <div className="container mx-auto px-4">
@@ -391,60 +445,6 @@ Aguardo retorno para prosseguir com a simulação!`;
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Simulação */}
-      <section id="simulacao" className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-              Simule seu consórcio imobiliário
-            </h2>
-            <p className="text-xl text-muted-foreground mb-12">
-              Preencha os dados abaixo e receba sua simulação personalizada para casa, apartamento ou lote
-            </p>
-
-            <Card className="shadow-elegant">
-              <CardContent className="p-8">
-                <form onSubmit={handleSimulationSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Nome completo</Label>
-                      <Input id="name" name="name" placeholder="Seu nome completo" required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">WhatsApp</Label>
-                      <Input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" required />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="property">Tipo de imóvel</Label>
-                    <select id="property" name="property" className="w-full p-3 border border-input rounded-lg bg-background" required>
-                      <option value="">Selecione o tipo de imóvel</option>
-                      <option value="Casa Popular">Casa Popular (até R$ 200.000)</option>
-                      <option value="Casa Média">Casa Média (R$ 200.000 - R$ 500.000)</option>
-                      <option value="Casa Premium">Casa Premium (acima de R$ 500.000)</option>
-                      <option value="Apartamento">Apartamento</option>
-                      <option value="Lote/Terreno">Lote/Terreno</option>
-                      <option value="Kitnet/Studio">Kitnet/Studio</option>
-                    </select>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="value">Valor estimado do imóvel</Label>
-                    <Input id="value" name="value" placeholder="Ex: 350.000" required />
-                  </div>
-                  
-                  <Button type="submit" className="w-full" size="lg" variant="secondary">
-                    Receber Simulação no WhatsApp
-                    <Phone className="ml-2 h-5 w-5" />
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
