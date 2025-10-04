@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Home, CreditCard, Shield, Users, Calculator, CheckCircle, Star, Phone, Mail, ChevronRight, X, Building, MapPin, MessageCircle } from "lucide-react";
 import heroCasaImage from "@/assets/hero-casa.jpg";
+import consorciosBanner from "@/assets/consorcios-banner.png";
 const Index = () => {
   const handleWhatsAppContact = () => {
     window.open('https://api.whatsapp.com/send?phone=5531996925313&text=Ol%C3%A1%2C+tenho+interesse+em+simular+um+cons%C3%B3rcio+de+casa%2Fapartamento.+Pode+me+ajudar%3F', '_blank');
@@ -129,6 +130,27 @@ Aguardo retorno para prosseguir com a simulação!`;
                 </form>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Empresas Representantes */}
+      <section className="py-12 bg-background border-y">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-primary">
+              Representantes Autorizados
+            </h2>
+            <p className="text-muted-foreground">
+              Trabalhamos com as maiores e mais confiáveis administradoras de consórcio do Brasil
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <img 
+              src={consorciosBanner} 
+              alt="Rodobens, Bradesco, Itaú e Banco do Brasil - Representantes autorizados de consórcios" 
+              className="w-full h-auto rounded-lg shadow-card"
+            />
           </div>
         </div>
       </section>
