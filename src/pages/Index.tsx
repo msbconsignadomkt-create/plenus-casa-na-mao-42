@@ -80,6 +80,34 @@ Aguardo retorno para prosseguir com a simulação!`;
         </div>
       </section>
 
+      {/* Oferta Banner */}
+      <section className="py-16 px-4 bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2djI4YTQgNCAwIDAgMS00IDRIMTZhNCA0IDAgMCAxLTQtNFYxNmE0IDQgMCAwIDEgNC00aDEyYTQgNCAwIDAgMSA0IDR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center space-y-6">
+            <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 text-sm px-4 py-1.5 backdrop-blur-sm">
+              🔥 OFERTA POR TEMPO LIMITADO
+            </Badge>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              Meia Parcela até a Contemplação
+            </h2>
+            <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto leading-relaxed">
+              Pague apenas 50% do valor da parcela até ser contemplado. Uma condição exclusiva para você começar agora!
+            </p>
+            <div className="pt-4">
+              <Button 
+                size="lg" 
+                onClick={() => document.getElementById('simulacao')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-white hover:bg-white/90 text-orange-600 font-bold text-lg px-8 py-6 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+              >
+                Aproveitar Oferta Agora
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Simulação */}
       <section id="simulacao" className="py-16">
         <div className="container mx-auto px-4">
