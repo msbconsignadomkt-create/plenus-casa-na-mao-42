@@ -148,7 +148,7 @@ Aguardo retorno para prosseguir com a simulação!`;
           <div className="max-w-5xl mx-auto">
             <img 
               src={consorciosBanner} 
-              alt="Rodobens, Bradesco, Itaú e Banco do Brasil - Representantes autorizados de consórcios" 
+              alt="Rodobens, Mapfre, Porto Seguro e Consórcio Servopa - Representantes autorizados de consórcios" 
               className="w-full h-auto rounded-lg shadow-card"
             />
           </div>
