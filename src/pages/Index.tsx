@@ -98,7 +98,7 @@ Aguardo retorno para prosseguir com a simulação!`;
               <Button 
                 size="lg" 
                 onClick={() => document.getElementById('simulacao')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white hover:bg-white/90 text-orange-600 font-bold text-lg px-8 py-6 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+                className="bg-white hover:bg-white/90 text-orange-600 font-bold text-lg px-8 py-6 transform hover:scale-105 transition-all"
               >
                 Aproveitar Oferta Agora
                 <ChevronRight className="ml-2 h-5 w-5" />
